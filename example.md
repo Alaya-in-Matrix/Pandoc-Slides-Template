@@ -3,14 +3,13 @@
 - Pandoc template for my weekly report in my research group meeting
 - What's in this demo:
     - CJK font: 中文字体
-    - Footnote[^1]
+    - Footnote
     - Figures, like @Fig:demoFig
+    - Tables, like @Tbl:demoTbl
     - Equations, like @Eq:demoEq
     - Algorithms
     - IEEE style bibliography[@couckuyt2014oodace; @rasmussen2006gaussian; @shahriari2016taking; @gelbart2015constrained; @liu2014gaspad; @melkumyan2011multi]
     - Code
-
-[^1]: Footnote here: $3^2 + 4^2 = 5^2$
 
 # Use this template:
 
@@ -19,19 +18,31 @@
 - Edit makefile for markdown file name, target pdf file name, font...
 - Edit beamer.tex to modify the beamer template
 
-# 中文字体
+# 中文字体, footnote
 
 马上相逢揖马鞭，客中相见客中怜。
-欲邀击筑悲歌饮，正值倾家无酒钱。
+欲邀击筑悲歌饮，正值倾家无酒钱[^1]。
 
-# Figures
+[^1]: 李白诗一首。
+
+# Figure
 
 Seems that bmp format is not supported.
 
 ![Ackley function](./img/ackley2.png){#fig:demoFig height=400}
 
+# Table
 
-# Equations
+Language | Good or Bad
+---------|------------
+Haskell  | Good
+C++      | Good
+PHP      | Bad
+
+Table: A Table {#tbl:demoTbl}
+
+
+# Equation
 
 $$
 \left\{
@@ -43,7 +54,7 @@ LCB(\bm{x})      &=& \mu(\bm{x}) - \kappa\sigma(\bm{x})
 \right.
 $${#eq:demoEq}
 
-# Algorithms
+# Algorithm
 
 \begin{algorithm}[H]
 \caption{Bayesian Optimization}

@@ -8,7 +8,8 @@ LATEXENG    = xelatex
 DEP=meta.yaml    \
 	custom.latex \
 	makefile 	 \
-	ref.bib
+	ref.bib      \
+	beamer.tex
 
 .PHONY: all slides tidy clean
 
@@ -24,17 +25,17 @@ $(TARGET).pdf:$(TARGET).tex
 
 $(TARGET).tex:$(SOURCE) $(DEP)
 	pandoc \
+		-s \
 		-t beamer \
 		-f markdown \
 		-H custom.latex \
-		--filter pandoc-crossref \
+		--template=beamer.tex \
+		--latex-engine=$(LATEXENG) \
+		--highlight=haddock \
 		-V mainfont=$(MAINFONT) \
 		-V CJKmainfont=$(CJKMAINFONT) \
 		-V monofont=$(MONOFONT) \
-		--latex-engine=$(LATEXENG) \
-		--template=beamer.tex \
-		--highlight=haddock \
-		-s \
+		--filter pandoc-crossref \
 		--biblatex \
 		-V bibliography=ref.bib \
 		-V biblio-title=References \

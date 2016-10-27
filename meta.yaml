@@ -4,4 +4,7 @@ date: \today
 author: Lv Wenlong
 graphics: yes
 link-citations: true
+tblPrefix: 
+    - "table."
+    - "Table."
 ---
