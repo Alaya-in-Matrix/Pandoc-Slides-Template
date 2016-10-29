@@ -10,13 +10,20 @@
     - Algorithms
     - IEEE style bibliography[@couckuyt2014oodace; @rasmussen2006gaussian; @shahriari2016taking; @gelbart2015constrained; @liu2014gaspad; @melkumyan2011multi]
     - Code
+    - Multiple columns
 
-# Use this template:
+# Use this template
 
 - Edit meta.yaml for title, author, date
 - Edit custom.latex to add custom latex packages
 - Edit makefile for markdown file name, target pdf file name, font...
 - Edit beamer.tex to modify the beamer template
+
+- Dependency:
+    - pandoc
+    - pandoc-crossref
+    - biber
+    - xelatex
 
 # 中文字体, footnote
 
@@ -27,9 +34,7 @@
 
 # Figure
 
-Seems that bmp format is not supported.
-
-![Ackley function](./img/ackley2.png){#fig:demoFig height=400}
+![Ackley function and the model after optimization](./img/ackley2.png){#fig:demoFig height=400}
 
 # Table
 
@@ -73,7 +78,6 @@ $${#eq:demoEq}
 
 # Code
 
-
 ```cpp
 #include <iostream>
 using namespace std;
@@ -83,3 +87,34 @@ int main()
     return EXIT_SUCCESS;
 }
 ```
+
+# Multiple Columns
+
+\begincols
+
+\column{.5\textwidth}
+
+```cpp
+// C++
+int fib(int n)
+{
+    if(n <= 1)
+        return 1
+    else
+    {
+        return fib(n-1) 
+               + fib(n-2);
+    }
+}
+```
+
+\column{.5\textwidth}
+
+```haskell
+-- Haskell
+fib 0 = 1
+fib 1 = 1
+fib n = fib (n-1) + fib (n-2)
+```
+
+\stopcols
