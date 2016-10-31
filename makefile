@@ -9,7 +9,7 @@ DEP=meta.yaml    \
 	custom.latex \
 	makefile 	 \
 	ref.bib      \
-	beamer.tex
+	template.latex
 
 .PHONY: all slides tidy clean
 
@@ -29,7 +29,7 @@ $(TARGET).tex:$(SOURCE) $(DEP)
 		-t beamer \
 		-f markdown \
 		-H custom.latex \
-		--template=beamer.tex \
+		--template=template.latex \
 		--latex-engine=$(LATEXENG) \
 		--highlight=haddock \
 		-V mainfont=$(MAINFONT) \
