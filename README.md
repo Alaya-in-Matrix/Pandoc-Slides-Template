@@ -1,18 +1,18 @@
 # README
 
-Pandoc template for slides used for my weekly report in my research group meeting.
+My pandoc template for slides and reports.
 
 
-## Feature
+## Dependency
 
-- Use beamer
+- Use beamer for slides
 - pandoc-crossref for cross referenc
 - biblatex for bibilography
 
 ## Why not using pandoc-citeproc and generate pdf directly?
 
 When there are many reference papers that I need multiple pages to present all
-references, `pandoc-citeproc` didn't work well for me.
+references, `pandoc-citeproc` didn't work well for beamer slides.
 
 ## How to use
 
