@@ -1,0 +1,11 @@
+---
+title: "DEMO article"
+date: \today
+author: Lv Wenlong
+abstract: Pandoc template for my weekly report in my research group meeting
+numbersections: yes
+graphics: yes
+tblPrefix: 
+    - "table."
+    - "Table."
+---

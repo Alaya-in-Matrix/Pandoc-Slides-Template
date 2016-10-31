@@ -1,13 +1,13 @@
 # README
 
-My pandoc template for slides and reports.
+My pandoc template for slides and article reports.
 
 
 ## Dependency
 
 - Use beamer for slides
 - pandoc-crossref for cross referenc
-- biblatex for bibilography
+- biblatex for bibilography, I use biber.
 
 ## Why not using pandoc-citeproc and generate pdf directly?
 
