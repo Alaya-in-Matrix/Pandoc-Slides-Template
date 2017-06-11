@@ -2,7 +2,7 @@
 
 - Pandoc template for my weekly report in my research group meeting
 - What's in this demo:
-    1. Figures, like @Fig:demoFig, Tables, like @Tbl:demoTbl, Equations, like @eq:demoEq
+    1. Figures, like @Fig:demoFig, tables, like @Tbl:demoTbl, equations, like @eq:demoEq
     1. Algorithms
     1. IEEE style bibliography[@couckuyt2014oodace; @rasmussen2006gaussian;
        @shahriari2016taking; @gelbart2015constrained; @liu2014gaspad;
