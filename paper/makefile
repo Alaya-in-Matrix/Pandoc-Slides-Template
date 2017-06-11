@@ -24,6 +24,7 @@ $(TARGET).tex:$(SOURCE) $(DEP)
 		--template=template.latex \
 		--latex-engine=$(LATEXENG) \
 		--filter pandoc-crossref \
+		--filter ./longtalbe_filter.py \
 		--biblatex \
 		-V bibliography=ref.bib \
 		-V biblio-style=ieee \

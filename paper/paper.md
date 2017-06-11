@@ -7,8 +7,9 @@
     1. IEEE style bibliography[@couckuyt2014oodace; @rasmussen2006gaussian;
        @shahriari2016taking; @gelbart2015constrained; @liu2014gaspad;
        @melkumyan2011multi]
+- See @Sec:SecDEMO
 
-# DEMO
+# DEMO{#sec:SecDEMO}
 
 ![Ackley function and the model after optimization](./img/ackley2.png){#fig:demoFig height=400}
 
