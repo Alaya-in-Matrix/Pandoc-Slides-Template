@@ -20,4 +20,8 @@ abstract: |
     unordered) lists, tables, algorithms(via raw latex) and ieee-style
     bibliography.
 
+secPrefix: "Section"
+tblPrefix: "Table"
+figPrefix: "Figure"
+eqnPrefix: "Equation"
 ---
