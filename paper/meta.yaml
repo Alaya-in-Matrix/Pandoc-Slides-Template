@@ -16,7 +16,7 @@ graphics: yes
 numbersections: yes
 
 abstract: |
-    Pandoc template for IEEE style papers, supprot figures, (ordered and
+    Pandoc template for IEEE style papers, support figures, (ordered and
     unordered) lists, tables, algorithms(via raw latex) and ieee-style
     bibliography.
 
