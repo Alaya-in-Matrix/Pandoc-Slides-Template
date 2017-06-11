@@ -2,6 +2,7 @@
 
 My pandoc template for slides and article reports.
 
+There is also an experimental supprot for IEEE style papers.
 
 ## Dependency
 

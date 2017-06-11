@@ -1,0 +1,23 @@
+---
+classoption:
+    - journal
+
+title: "DEMO article"
+author: 
+    - name: Wenlong Lyu
+      affiliation: Fudan University
+
+keyword:
+      - Pandoc template
+      - IEEE format
+      - Whatever
+
+graphics: yes
+numbersections: yes
+
+abstract: |
+    Pandoc template for IEEE style papers, supprot figures, (ordered and
+    unordered) lists, tables, algorithms(via raw latex) and ieee-style
+    bibliography.
+
+---
